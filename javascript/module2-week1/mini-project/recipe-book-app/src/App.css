@@ -1,0 +1,74 @@
+.app-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "sidebar content"
+    "footer footer";
+  height: 100vh;
+ margin: 0px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 6px 4px 8px rgba(15, 19, 42, 0.1);
+
+}
+li img {
+  width: 200px;
+}
+.navbar {
+  grid-area: navbar;
+  background-color: rgb(231, 223, 223);
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #d8cdcd;
+  padding: 10px;
+  margin: 1px;
+  border-radius: 5px;
+
+}
+
+.main-content {
+  grid-area: content;
+  display: flex;
+  background-color: rgb(202, 208, 208);
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+  border-radius: 5px;
+}
+
+
+
+.detailsCard {
+padding: 5px;
+margin: 5px;
+align-items: center
+}
+
+.detailsCard img {
+  width: 400px;
+  height: 400px
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #9d8181;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+}
